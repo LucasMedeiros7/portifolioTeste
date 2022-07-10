@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@1&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.6rem;
+  background: #212226;
+  color: white;
+}
+
+.container {
+  max-width: 120rem;
+  width: 90%;
+  padding: 1.6rem;
+}
+
+
+/* ||||||| HEADER ||||||||| */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3.2rem auto 0 auto;
+}
+
+#header .logo {
+  font-size: 2.4rem;
+  border-left: 5px solid #5280E2;
+  padding-left: .9rem;
+  height: 6rem;
+  transition: .2s;
+  cursor: pointer;
+}
+
+#header .logo:hover {
+  transform: rotateX(10deg) rotateY(10deg) rotateZ(10deg);
+}
+
+.nav-bar ul {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+}
+
+.nav-bar ul li a {
+  border-bottom: 2px solid #15CDCB;
+  border-width: 0;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  color: #15CDCB;
+  position: relative;
+}
+
+.nav-bar ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #15CDCB;
+  position: absolute;
+  bottom: -.8rem;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.nav-bar ul li a:hover::after {
+  width: 100%;
+}
+
+/* ||||||| SECTION HELLO ||||||||| */
+.section-hello {
+  margin: 10.6rem auto;
+}
+
+.section-hello .hello {
+  max-width: 48.7rem;
+  width: 100%;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.hello h2 {
+  font-size: 3.6rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #15CDCB;
+}
+
+.section-hello .button {
+  text-decoration: none;
+  font-family: 'JetBrains Mono', monospace;
+  background: #5280E2;
+  border: none;
+  padding: 1rem 2.5rem;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: .8rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.section-hello .button:hover {
+  transform: translateX(.5rem);
+  background: #5280e28e;
+}
