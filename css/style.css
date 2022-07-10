@@ -114,3 +114,29 @@ body {
   transform: translateX(.5rem);
   background: #5280e28e;
 }
+
+/* ||||||| SECTION ABOUT ||||||||| */
+.section-about {
+  display: flex;
+  gap: 12.1rem;
+  margin: 10.6rem auto;
+}
+
+.about h2 {
+  font-size: 3.6rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #15CDCB;
+}
+
+.about p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.section-about .about {
+  max-width: 52.1rem;
+  width: 100%;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
