@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@1&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@1&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +11,7 @@
 }
 
 body {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 1.6rem;
   background: #212226;
   color: white;
@@ -24,7 +23,6 @@ body {
   padding: 1.6rem;
 }
 
-
 /* ||||||| HEADER ||||||||| */
 #header {
   display: flex;
@@ -35,15 +33,10 @@ body {
 
 #header .logo {
   font-size: 2.4rem;
-  border-left: 5px solid #5280E2;
-  padding-left: .9rem;
+  border-left: 5px solid #5280e2;
+  padding-left: 0.9rem;
   height: 6rem;
-  transition: .2s;
   cursor: pointer;
-}
-
-#header .logo:hover {
-  transform: rotateX(10deg) rotateY(10deg) rotateZ(10deg);
 }
 
 .nav-bar ul {
@@ -54,12 +47,12 @@ body {
 }
 
 .nav-bar ul li a {
-  border-bottom: 2px solid #15CDCB;
+  border-bottom: 2px solid #15cdcb;
   border-width: 0;
   text-decoration: none;
   color: white;
   cursor: pointer;
-  color: #15CDCB;
+  color: #15cdcb;
   position: relative;
 }
 
@@ -67,9 +60,9 @@ body {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #15CDCB;
+  background-color: #15cdcb;
   position: absolute;
-  bottom: -.8rem;
+  bottom: -0.8rem;
   left: 0;
   transition: width 0.3s;
 }
@@ -94,24 +87,24 @@ body {
   font-size: 3.6rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  color: #15CDCB;
+  color: #15cdcb;
 }
 
 .section-hello .button {
   text-decoration: none;
-  font-family: 'JetBrains Mono', monospace;
-  background: #5280E2;
+  font-family: "JetBrains Mono", monospace;
+  background: #5280e2;
   border: none;
   padding: 1rem 2.5rem;
   color: white;
   font-size: 1.8rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .section-hello .button:hover {
-  transform: translateX(.5rem);
+  transform: translateX(0.5rem);
   background: #5280e28e;
 }
 
@@ -126,7 +119,7 @@ body {
   font-size: 3.6rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  color: #15CDCB;
+  color: #15cdcb;
 }
 
 .about p {
@@ -139,4 +132,82 @@ body {
   width: 100%;
   font-size: 1.8rem;
   margin-bottom: 2.4rem;
+}
+
+.section-services {
+  margin: 10.6rem auto;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 3.6rem;
+  margin-top: 1rem;
+  margin-bottom: 5.8rem;
+  color: #15cdcb;
+}
+
+.services-cards {
+  display: flex;
+  justify-content: center;
+  gap: 7.1rem;
+}
+
+.services-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.6rem;
+  max-width: 35.7rem;
+  width: 100%;
+  background-color: #2f3034;
+  border: 1px solid #15cdcb;
+  border-radius: 1.6rem;
+}
+
+.services-cards .card h3 {
+  color: #15cdcb;
+  margin-bottom: 1.3rem;
+}
+
+.services-cards .card p {
+  margin: 0 auto 5.3rem auto;
+  margin-bottom: 5.3rem;
+}
+
+svg {
+  margin-top: 4.2rem;
+  margin-bottom: 3.8rem;
+  border-radius: 50%;
+}
+
+.section-portfolio {
+  height: 63.6rem;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio {
+  display: flex;
+  gap: 7.1rem;
+}
+
+.portfolio .card {
+  max-width: 46.4rem;
+  width: 90%;
+  border-radius: 1.6rem;
+  padding: 0 1.6rem;
+  background: linear-gradient(
+      159.02deg,
+      rgba(255, 255, 255, 0.4) 5.17%,
+      rgba(255, 255, 255, 0) 96.84%
+    ),
+    radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.33) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
 }
