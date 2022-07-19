@@ -23,7 +23,6 @@ body {
   padding: 1.6rem;
 }
 
-/* ||||||| HEADER ||||||||| */
 #header {
   display: flex;
   justify-content: space-between;
@@ -71,7 +70,6 @@ body {
   width: 100%;
 }
 
-/* ||||||| SECTION HELLO ||||||||| */
 .section-hello {
   margin: 10.6rem auto;
 }
@@ -108,7 +106,6 @@ body {
   background: #5280e28e;
 }
 
-/* ||||||| SECTION ABOUT ||||||||| */
 .section-about {
   display: flex;
   gap: 12.1rem;
@@ -186,8 +183,16 @@ svg {
   background-image: url(../img/bg.png);
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.section-portfolio h2 {
+  font-size: 3.6rem;
+  margin-top: 1rem;
+  margin-bottom: 5.8rem;
+  color: #15cdcb;
 }
 
 .portfolio {
@@ -196,18 +201,60 @@ svg {
 }
 
 .portfolio .card {
-  max-width: 46.4rem;
+  max-width: 37.4rem;
   width: 90%;
   border-radius: 1.6rem;
   padding: 0 1.6rem;
-  background: linear-gradient(
-      159.02deg,
+  background: linear-gradient(159.02deg,
       rgba(255, 255, 255, 0.4) 5.17%,
-      rgba(255, 255, 255, 0) 96.84%
-    ),
-    radial-gradient(
-      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0) 96.84%),
+    radial-gradient(100% 100% at 0% 0%,
       rgba(255, 255, 255, 0.33) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
+      rgba(255, 255, 255, 0) 100%);
+}
+
+.portfolio .card img {
+  display: block;
+  max-width: 32.1rem;
+  width: 100%;
+  margin: 5rem auto 2.65rem auto;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.portfolio .card img:hover {
+  transform: translateY(-1rem);
+}
+
+.portfolio .card .div-span {
+  margin-bottom: 1.6rem;
+  padding: 0 .8rem;
+}
+
+.portfolio .card .div-span span {
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: #15cdcb;
+  border: 1px solid #15cdcb;
+  border-radius: 1.4rem;
+  padding: .4rem;
+}
+
+.portfolio .card h4 {
+  font-size: 1.8rem;
+  padding: 0 .8rem;
+  cursor: pointer;
+  transition: .2s;
+  width: min-content;
+}
+
+.portfolio .card h4:hover {
+  color: #5280e2;
+  transform: translateY(-.3rem)
+}
+
+.portfolio .card p {
+  font-size: 1.3rem;
+  padding: 0 .8rem;
+  margin: .5rem auto 4.5rem auto;
 }
